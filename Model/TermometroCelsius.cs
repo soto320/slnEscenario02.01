@@ -1,0 +1,18 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Model
+{
+    public class TermometroCelsius
+    {
+        public double GetTemperatureInCelsius()
+        {
+            // Simulate reading temperature in Celsius
+            return 25.0;
+        }
+    }
+
+}
