@@ -6,10 +6,9 @@ using System.Threading.Tasks;
 
 namespace Model
 {
-    public class Lecturas
+    public class DispositivoBloque
     {
         public string Descripcion { get; set; }
-        public double Temperatura { get; set; }
-        public double Centigrados { get => Descripcion == "F" ?(Temperatura - 32)*5/9: Temperatura; }
+        public DispositivoSensorTemperatura Sensor { get; set; }
     }
 }

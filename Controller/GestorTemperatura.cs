@@ -21,13 +21,13 @@ namespace Controller
         {
             if (DispositivoSensorTemperatura != null)
                 return DispositivoSensorTemperatura.ObtenerTemperatura();
-            throw new InvalidOperationException("No sensor is available.");
+            return 0;
 
         }
         public int NextBloque() {
-            return this.Bloques==null? this.Bloques.Max(x=>x.Id)+ 1:0;        
+            return this.Bloques.Count>0? this.Bloques.Max(x=>x.Id)+ 1:0;        
         }
-        public void AddBlock( Bloque bloque)
+        public void AddBlock(Bloque bloque)
         {
            this.Bloques.Add(bloque);
         }

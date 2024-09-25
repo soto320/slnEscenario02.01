@@ -11,7 +11,7 @@ namespace Model
         public int Id { get; set; }
         public string Nombre { get; set; }
 
-        private List<Lecturas> Lecturas { get; set; }
+        public List<Lecturas> Lecturas { get; set; }
         public Bloque()
         {
             this.Lecturas = new List<Lecturas>();
@@ -21,7 +21,7 @@ namespace Model
         {
             this.Id = id;
             this.Nombre = blockName;
-            this.Lecturas = new List<Lecturas>();
+            this.Lecturas = new List<Lecturas>() { };
         }
 
         // Add a temperature sensor to the block

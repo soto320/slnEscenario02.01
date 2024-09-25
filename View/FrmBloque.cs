@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Model;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,7 +13,7 @@ namespace View
 {
     public partial class FrmBloque : Form
     {
-        private Model.Bloque Bloque;
+        public Model.Bloque Bloque;
         public FrmBloque()
         {
             InitializeComponent();
@@ -25,13 +26,32 @@ namespace View
             this.Bloque = bloque;
             this.Cargar();
         }
-        private void Cargar() {
+        private void Cargar()
+        {
             this.bloqueBindingSource.Clear();
             this.bloqueBindingSource.DataSource = this.Bloque;
+            this.temperaturaBindingSource.Clear();
+            this.temperaturaBindingSource.DataSource = this.Bloque.Lecturas;
         }
         private void btnAceptar_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnAddTemperatura_Click(object sender, EventArgs e)
+        {
+            frmPrincipal frm = new frmPrincipal();
+            if (frm.ShowDialog() == DialogResult.OK) {
+                Model.Lecturas a = new Model.Lecturas();
+                a.Descripcion = frm.IdTemperatura;
+                a.Temperatura = frm.Temperatura;
+                this.temperaturaBindingSource.EndEdit();
+                ((List<Model.Lecturas>)(this.temperaturaBindingSource.DataSource)).Add(a);
+                this.temperaturaBindingSource.ResetBindings(true);
+            } else {
+                this.Cargar();
+            
+            }
         }
     }
 }
