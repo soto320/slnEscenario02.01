@@ -11,7 +11,8 @@ namespace Model
         public double GetTemperatureInFahrenheit()
         {
             // Simulate reading temperature in Fahrenheit
-            return 77.0;
+            //77.0
+            return new Random().Next(1, 212);
         }
     }
 

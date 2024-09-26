@@ -11,7 +11,8 @@ namespace Model
         public double GetTemperatureInCelsius()
         {
             // Simulate reading temperature in Celsius
-            return 25.0;
+            //25.0
+            return new Random().Next(1,101);
         }
     }
 

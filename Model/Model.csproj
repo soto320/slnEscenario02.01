@@ -44,9 +44,7 @@
     <Compile Include="AdaptadorCelsius .cs" />
     <Compile Include="AdaptadorFahrenheit.cs" />
     <Compile Include="Bloque.cs" />
-    <Compile Include="DispositivoBloque.cs" />
     <Compile Include="DispositivoSensorTemperatura.cs" />
-    <Compile Include="DispositivoSensor.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Lecturas.cs" />
     <Compile Include="TermometroCelsius.cs" />

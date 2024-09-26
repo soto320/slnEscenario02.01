@@ -19,5 +19,9 @@ namespace Model
         {
             return _termometroFahrenheit.GetTemperatureInFahrenheit();
         }
+        public double ObtenerTemperaturaCelcius()
+        {
+            return (_termometroFahrenheit.GetTemperatureInFahrenheit()-32)*5/9;
+        }
     }
 }

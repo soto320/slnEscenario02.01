@@ -28,25 +28,25 @@
         /// </summary>
         private void InitializeComponent()
         {
-            DevExpress.XtraGauges.Core.Model.LinearScaleRange linearScaleRange1 = new DevExpress.XtraGauges.Core.Model.LinearScaleRange();
-            DevExpress.XtraGauges.Core.Model.LinearScaleRange linearScaleRange2 = new DevExpress.XtraGauges.Core.Model.LinearScaleRange();
-            DevExpress.XtraGauges.Core.Model.LinearScaleRange linearScaleRange3 = new DevExpress.XtraGauges.Core.Model.LinearScaleRange();
+            DevExpress.XtraGauges.Core.Model.LinearScaleRange linearScaleRange4 = new DevExpress.XtraGauges.Core.Model.LinearScaleRange();
+            DevExpress.XtraGauges.Core.Model.LinearScaleRange linearScaleRange5 = new DevExpress.XtraGauges.Core.Model.LinearScaleRange();
+            DevExpress.XtraGauges.Core.Model.LinearScaleRange linearScaleRange6 = new DevExpress.XtraGauges.Core.Model.LinearScaleRange();
             gpTempera = new GroupBox();
             lblRespuesta = new Label();
             ckFahrenheit = new CheckBox();
             ckCelsius = new CheckBox();
             gCelsius = new DevExpress.XtraGauges.Win.GaugeControl();
-            linearGauge3 = new DevExpress.XtraGauges.Win.Gauges.Linear.LinearGauge();
-            linearScaleBackgroundLayerComponent2 = new DevExpress.XtraGauges.Win.Gauges.Linear.LinearScaleBackgroundLayerComponent();
-            linearScaleComponent3 = new DevExpress.XtraGauges.Win.Gauges.Linear.LinearScaleComponent();
-            linearScaleLevelComponent2 = new DevExpress.XtraGauges.Win.Gauges.Linear.LinearScaleLevelComponent();
             btnCancelar = new Button();
             btnAceptar = new Button();
+            linearGauge3 = new DevExpress.XtraGauges.Win.Gauges.Linear.LinearGauge();
+            linearScaleComponent1 = new DevExpress.XtraGauges.Win.Gauges.Linear.LinearScaleComponent();
+            linearScaleBackgroundLayerComponent1 = new DevExpress.XtraGauges.Win.Gauges.Linear.LinearScaleBackgroundLayerComponent();
+            linearScaleLevelComponent1 = new DevExpress.XtraGauges.Win.Gauges.Linear.LinearScaleLevelComponent();
             gpTempera.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)linearGauge3).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)linearScaleBackgroundLayerComponent2).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)linearScaleComponent3).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)linearScaleLevelComponent2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)linearScaleComponent1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)linearScaleBackgroundLayerComponent1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)linearScaleLevelComponent1).BeginInit();
             SuspendLayout();
             // 
             // gpTempera
@@ -75,9 +75,9 @@
             ckFahrenheit.AutoSize = true;
             ckFahrenheit.Location = new Point(28, 84);
             ckFahrenheit.Name = "ckFahrenheit";
-            ckFahrenheit.Size = new Size(78, 17);
+            ckFahrenheit.Size = new Size(139, 17);
             ckFahrenheit.TabIndex = 1;
-            ckFahrenheit.Text = "Fahrenheit";
+            ckFahrenheit.Text = "Termometro Fahrenheit";
             ckFahrenheit.UseVisualStyleBackColor = true;
             ckFahrenheit.Click += ckFahrenheit_Click;
             // 
@@ -86,9 +86,9 @@
             ckCelsius.AutoSize = true;
             ckCelsius.Location = new Point(28, 49);
             ckCelsius.Name = "ckCelsius";
-            ckCelsius.Size = new Size(59, 17);
+            ckCelsius.Size = new Size(120, 17);
             ckCelsius.TabIndex = 0;
-            ckCelsius.Text = "Celsius";
+            ckCelsius.Text = "Termometro Celsius";
             ckCelsius.UseVisualStyleBackColor = true;
             ckCelsius.Click += ckCelsius_Click;
             // 
@@ -97,75 +97,8 @@
             gCelsius.Gauges.AddRange(new DevExpress.XtraGauges.Base.IGauge[] { linearGauge3 });
             gCelsius.Location = new Point(220, 21);
             gCelsius.Name = "gCelsius";
-            gCelsius.Size = new Size(154, 212);
+            gCelsius.Size = new Size(165, 212);
             gCelsius.TabIndex = 3;
-            // 
-            // linearGauge3
-            // 
-            linearGauge3.BackgroundLayers.AddRange(new DevExpress.XtraGauges.Win.Gauges.Linear.LinearScaleBackgroundLayerComponent[] { linearScaleBackgroundLayerComponent2 });
-            linearGauge3.Bounds = new Rectangle(6, 6, 142, 200);
-            linearGauge3.Levels.AddRange(new DevExpress.XtraGauges.Win.Gauges.Linear.LinearScaleLevelComponent[] { linearScaleLevelComponent2 });
-            linearGauge3.Name = "linearGauge3";
-            linearGauge3.OptionsToolTip.TooltipTitleFormat = "{0}";
-            linearGauge3.Scales.AddRange(new DevExpress.XtraGauges.Win.Gauges.Linear.LinearScaleComponent[] { linearScaleComponent3 });
-            // 
-            // linearScaleBackgroundLayerComponent2
-            // 
-            linearScaleBackgroundLayerComponent2.LinearScale = linearScaleComponent3;
-            linearScaleBackgroundLayerComponent2.Name = "bg1";
-            linearScaleBackgroundLayerComponent2.ScaleStartPos = new DevExpress.XtraGauges.Core.Base.PointF2D(0.5F, 0.85F);
-            linearScaleBackgroundLayerComponent2.ShapeType = DevExpress.XtraGauges.Core.Model.BackgroundLayerShapeType.Linear_Style16;
-            linearScaleBackgroundLayerComponent2.ZOrder = 1000;
-            // 
-            // linearScaleComponent3
-            // 
-            linearScaleComponent3.AppearanceMajorTickmark.BorderBrush = new DevExpress.XtraGauges.Core.Drawing.SolidBrushObject("Color:White");
-            linearScaleComponent3.AppearanceMajorTickmark.ContentBrush = new DevExpress.XtraGauges.Core.Drawing.SolidBrushObject("Color:White");
-            linearScaleComponent3.AppearanceMinorTickmark.BorderBrush = new DevExpress.XtraGauges.Core.Drawing.SolidBrushObject("Color:White");
-            linearScaleComponent3.AppearanceMinorTickmark.ContentBrush = new DevExpress.XtraGauges.Core.Drawing.SolidBrushObject("Color:White");
-            linearScaleComponent3.AppearanceTickmarkText.DXFont = new DevExpress.Drawing.DXFont("Tahoma", 11F, DevExpress.Drawing.DXFontStyle.Bold, DevExpress.Drawing.DXGraphicsUnit.Pixel);
-            linearScaleComponent3.AppearanceTickmarkText.TextBrush = new DevExpress.XtraGauges.Core.Drawing.SolidBrushObject("Color:#484E5A");
-            linearScaleComponent3.EndPoint = new DevExpress.XtraGauges.Core.Base.PointF2D(62.5F, 38F);
-            linearScaleComponent3.MajorTickCount = 6;
-            linearScaleComponent3.MajorTickmark.FormatString = "{0:F0}";
-            linearScaleComponent3.MajorTickmark.ShapeOffset = -23F;
-            linearScaleComponent3.MajorTickmark.ShapeType = DevExpress.XtraGauges.Core.Model.TickmarkShapeType.Linear_Style16_1;
-            linearScaleComponent3.MajorTickmark.TextOffset = -33F;
-            linearScaleComponent3.MaxValue = 100.1F;
-            linearScaleComponent3.MinorTickCount = 4;
-            linearScaleComponent3.MinorTickmark.ShapeOffset = -17F;
-            linearScaleComponent3.MinorTickmark.ShapeType = DevExpress.XtraGauges.Core.Model.TickmarkShapeType.Linear_Style16_2;
-            linearScaleComponent3.Name = "scale1";
-            linearScaleRange1.AppearanceRange.ContentBrush = new DevExpress.XtraGauges.Core.Drawing.SolidBrushObject("Color:#8CBE5C");
-            linearScaleRange1.EndThickness = 13F;
-            linearScaleRange1.EndValue = 33F;
-            linearScaleRange1.Name = "Range0";
-            linearScaleRange1.ShapeOffset = -23F;
-            linearScaleRange1.StartThickness = 13F;
-            linearScaleRange2.AppearanceRange.ContentBrush = new DevExpress.XtraGauges.Core.Drawing.SolidBrushObject("Color:#F1C05D");
-            linearScaleRange2.EndThickness = 13F;
-            linearScaleRange2.EndValue = 66F;
-            linearScaleRange2.Name = "Range1";
-            linearScaleRange2.ShapeOffset = -23F;
-            linearScaleRange2.StartThickness = 13F;
-            linearScaleRange2.StartValue = 33F;
-            linearScaleRange3.AppearanceRange.ContentBrush = new DevExpress.XtraGauges.Core.Drawing.SolidBrushObject("Color:#ED8D77");
-            linearScaleRange3.EndThickness = 13F;
-            linearScaleRange3.EndValue = 100F;
-            linearScaleRange3.Name = "Range2";
-            linearScaleRange3.ShapeOffset = -23F;
-            linearScaleRange3.StartThickness = 13F;
-            linearScaleRange3.StartValue = 66F;
-            linearScaleComponent3.Ranges.AddRange(new DevExpress.XtraGauges.Core.Model.IRange[] { linearScaleRange1, linearScaleRange2, linearScaleRange3 });
-            linearScaleComponent3.StartPoint = new DevExpress.XtraGauges.Core.Base.PointF2D(62.5F, 212F);
-            linearScaleComponent3.Value = 50F;
-            // 
-            // linearScaleLevelComponent2
-            // 
-            linearScaleLevelComponent2.LinearScale = linearScaleComponent3;
-            linearScaleLevelComponent2.Name = "level1";
-            linearScaleLevelComponent2.ShapeType = DevExpress.XtraGauges.Core.Model.LevelShapeSetType.Style16;
-            linearScaleLevelComponent2.ZOrder = -50;
             // 
             // btnCancelar
             // 
@@ -186,6 +119,73 @@
             btnAceptar.Text = "Aceptar";
             btnAceptar.UseVisualStyleBackColor = true;
             // 
+            // linearGauge3
+            // 
+            linearGauge3.BackgroundLayers.AddRange(new DevExpress.XtraGauges.Win.Gauges.Linear.LinearScaleBackgroundLayerComponent[] { linearScaleBackgroundLayerComponent1 });
+            linearGauge3.Bounds = new Rectangle(6, 6, 153, 200);
+            linearGauge3.Levels.AddRange(new DevExpress.XtraGauges.Win.Gauges.Linear.LinearScaleLevelComponent[] { linearScaleLevelComponent1 });
+            linearGauge3.Name = "linearGauge3";
+            linearGauge3.OptionsToolTip.TooltipTitleFormat = "{0}";
+            linearGauge3.Scales.AddRange(new DevExpress.XtraGauges.Win.Gauges.Linear.LinearScaleComponent[] { linearScaleComponent1 });
+            // 
+            // linearScaleComponent1
+            // 
+            linearScaleComponent1.AppearanceMajorTickmark.BorderBrush = new DevExpress.XtraGauges.Core.Drawing.SolidBrushObject("Color:White");
+            linearScaleComponent1.AppearanceMajorTickmark.ContentBrush = new DevExpress.XtraGauges.Core.Drawing.SolidBrushObject("Color:White");
+            linearScaleComponent1.AppearanceMinorTickmark.BorderBrush = new DevExpress.XtraGauges.Core.Drawing.SolidBrushObject("Color:White");
+            linearScaleComponent1.AppearanceMinorTickmark.ContentBrush = new DevExpress.XtraGauges.Core.Drawing.SolidBrushObject("Color:White");
+            linearScaleComponent1.AppearanceTickmarkText.DXFont = new DevExpress.Drawing.DXFont("Tahoma", 11F, DevExpress.Drawing.DXFontStyle.Bold, DevExpress.Drawing.DXGraphicsUnit.Pixel);
+            linearScaleComponent1.AppearanceTickmarkText.TextBrush = new DevExpress.XtraGauges.Core.Drawing.SolidBrushObject("Color:#484E5A");
+            linearScaleComponent1.EndPoint = new DevExpress.XtraGauges.Core.Base.PointF2D(62.5F, 38F);
+            linearScaleComponent1.MajorTickCount = 6;
+            linearScaleComponent1.MajorTickmark.FormatString = "{0:F0}";
+            linearScaleComponent1.MajorTickmark.ShapeOffset = -23F;
+            linearScaleComponent1.MajorTickmark.ShapeType = DevExpress.XtraGauges.Core.Model.TickmarkShapeType.Linear_Style16_1;
+            linearScaleComponent1.MajorTickmark.TextOffset = -33F;
+            linearScaleComponent1.MaxValue = 100F;
+            linearScaleComponent1.MinorTickCount = 4;
+            linearScaleComponent1.MinorTickmark.ShapeOffset = -17F;
+            linearScaleComponent1.MinorTickmark.ShapeType = DevExpress.XtraGauges.Core.Model.TickmarkShapeType.Linear_Style16_2;
+            linearScaleComponent1.Name = "scale1";
+            linearScaleRange4.AppearanceRange.ContentBrush = new DevExpress.XtraGauges.Core.Drawing.SolidBrushObject("Color:#8CBE5C");
+            linearScaleRange4.EndThickness = 13F;
+            linearScaleRange4.EndValue = 33F;
+            linearScaleRange4.Name = "Range0";
+            linearScaleRange4.ShapeOffset = -23F;
+            linearScaleRange4.StartThickness = 13F;
+            linearScaleRange5.AppearanceRange.ContentBrush = new DevExpress.XtraGauges.Core.Drawing.SolidBrushObject("Color:#F1C05D");
+            linearScaleRange5.EndThickness = 13F;
+            linearScaleRange5.EndValue = 66F;
+            linearScaleRange5.Name = "Range1";
+            linearScaleRange5.ShapeOffset = -23F;
+            linearScaleRange5.StartThickness = 13F;
+            linearScaleRange5.StartValue = 33F;
+            linearScaleRange6.AppearanceRange.ContentBrush = new DevExpress.XtraGauges.Core.Drawing.SolidBrushObject("Color:#ED8D77");
+            linearScaleRange6.EndThickness = 13F;
+            linearScaleRange6.EndValue = 100F;
+            linearScaleRange6.Name = "Range2";
+            linearScaleRange6.ShapeOffset = -23F;
+            linearScaleRange6.StartThickness = 13F;
+            linearScaleRange6.StartValue = 66F;
+            linearScaleComponent1.Ranges.AddRange(new DevExpress.XtraGauges.Core.Model.IRange[] { linearScaleRange4, linearScaleRange5, linearScaleRange6 });
+            linearScaleComponent1.StartPoint = new DevExpress.XtraGauges.Core.Base.PointF2D(62.5F, 212F);
+            linearScaleComponent1.Value = 50F;
+            // 
+            // linearScaleBackgroundLayerComponent1
+            // 
+            linearScaleBackgroundLayerComponent1.LinearScale = linearScaleComponent1;
+            linearScaleBackgroundLayerComponent1.Name = "bg1";
+            linearScaleBackgroundLayerComponent1.ScaleStartPos = new DevExpress.XtraGauges.Core.Base.PointF2D(0.5F, 0.85F);
+            linearScaleBackgroundLayerComponent1.ShapeType = DevExpress.XtraGauges.Core.Model.BackgroundLayerShapeType.Linear_Style16;
+            linearScaleBackgroundLayerComponent1.ZOrder = 1000;
+            // 
+            // linearScaleLevelComponent1
+            // 
+            linearScaleLevelComponent1.LinearScale = linearScaleComponent1;
+            linearScaleLevelComponent1.Name = "level1";
+            linearScaleLevelComponent1.ShapeType = DevExpress.XtraGauges.Core.Model.LevelShapeSetType.Style26;
+            linearScaleLevelComponent1.ZOrder = -50;
+            // 
             // frmPrincipal
             // 
             AcceptButton = btnAceptar;
@@ -204,9 +204,9 @@
             gpTempera.ResumeLayout(false);
             gpTempera.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)linearGauge3).EndInit();
-            ((System.ComponentModel.ISupportInitialize)linearScaleBackgroundLayerComponent2).EndInit();
-            ((System.ComponentModel.ISupportInitialize)linearScaleComponent3).EndInit();
-            ((System.ComponentModel.ISupportInitialize)linearScaleLevelComponent2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)linearScaleComponent1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)linearScaleBackgroundLayerComponent1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)linearScaleLevelComponent1).EndInit();
             ResumeLayout(false);
         }
 
@@ -216,11 +216,11 @@
         private CheckBox ckFahrenheit;
         private CheckBox ckCelsius;
         private DevExpress.XtraGauges.Win.GaugeControl gCelsius;
-        private DevExpress.XtraGauges.Win.Gauges.Linear.LinearGauge linearGauge3;
-        private DevExpress.XtraGauges.Win.Gauges.Linear.LinearScaleBackgroundLayerComponent linearScaleBackgroundLayerComponent2;
-        private DevExpress.XtraGauges.Win.Gauges.Linear.LinearScaleComponent linearScaleComponent3;
-        private DevExpress.XtraGauges.Win.Gauges.Linear.LinearScaleLevelComponent linearScaleLevelComponent2;
         private Button btnCancelar;
         private Button btnAceptar;
+        private DevExpress.XtraGauges.Win.Gauges.Linear.LinearGauge linearGauge3;
+        private DevExpress.XtraGauges.Win.Gauges.Linear.LinearScaleBackgroundLayerComponent linearScaleBackgroundLayerComponent1;
+        private DevExpress.XtraGauges.Win.Gauges.Linear.LinearScaleComponent linearScaleComponent1;
+        private DevExpress.XtraGauges.Win.Gauges.Linear.LinearScaleLevelComponent linearScaleLevelComponent1;
     }
 }
