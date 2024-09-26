@@ -17,11 +17,12 @@ namespace Model
 
         public double ObtenerTemperatura()
         {
-            return _termometroFahrenheit.GetTemperatureInFahrenheit();
+            //return _termometroFahrenheit.GetTemperatureInFahrenheit();
+            return (_termometroFahrenheit.GetTemperatureInFahrenheit() - 32) * 5 / 9;
         }
-        public double ObtenerTemperaturaCelcius()
+       /* public double ObtenerTemperaturaCelcius()
         {
-            return (_termometroFahrenheit.GetTemperatureInFahrenheit()-32)*5/9;
-        }
+            return _termometroFahrenheit.GetTemperatureInFahrenheit();
+        }*/
     }
 }

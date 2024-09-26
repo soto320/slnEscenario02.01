@@ -12,7 +12,7 @@ namespace Model
         {
             // Simulate reading temperature in Celsius
             //25.0
-            return new Random().Next(1,101);
+            return new Random().Next(1,100);
         }
     }
 
